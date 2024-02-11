@@ -52,9 +52,9 @@ function UsefulLinks() {
     ]
   };
   return (
-    <div className="slider-container p-10">
+    <section className="slider-container p-10 bg-white text-black">
       <h2 className="text-2xl font-bold mb-4 text-center">Quick Links</h2>
-      <Slider {...settings}>
+      <Slider {...settings} >
         <div>
           <div>
             <Link to="/" className="text-black text-center flex flex-col justify-center items-center">
@@ -152,7 +152,7 @@ function UsefulLinks() {
           </div>
         </div>
       </Slider>
-    </div>
+    </section>
   );
 }
 

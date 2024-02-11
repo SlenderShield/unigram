@@ -1,4 +1,3 @@
-import React from 'react';
 import HeadImg from '../assets/fwdserviceicon/head.jpg'
 
 const Head = () => {
@@ -11,10 +10,10 @@ const Head = () => {
         className="object-cover w-full h-full absolute inset-0"
       />
 
-      <div className="relative z-10 text-justify">
+      <div className="relative text-justify">
         <div className='text-3xl'>
         <p className="mb-4 text-black">
-          Let's build our</p>
+          Let&apos;s build our</p>
         <h1 className="text-5xl font-bold mb-4 text-[#ECB602] tracking-wide">Gram Swaraj</h1>
 
         <p className="mb-4 text-black">
