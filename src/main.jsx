@@ -1,15 +1,55 @@
 // src/main.jsx
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
+import ReactDOM from 'react-dom/client';
 import './styles.css';
-import App from './App';
 
-ReactDOM.render(
+import App from "./App";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Root from "./routes/Root"
+import ErrorPage from "./routes/Error-Page";
+import About from "./routes/About";
+import Services from "./routes/Services";
+import Contact from "./routes/Contact";
+import Login from "./routes/Login";
+import SignUp from "./routes/SignUp";
+
+const router = createBrowserRouter([
+  {
+    element: <Root />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/",
+        element: <App />,
+      },
+      {
+        path: "services",
+        element: <Services />,
+      },
+      {
+        path: "about",
+        element: <About />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
+      },
+      {
+        path: "login",
+        element: <Login />,
+      },
+      {
+        path: "signup",
+        element: <SignUp />,
+      },
+    ],
+  },
+]);
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
   <React.StrictMode>
-    <Router>
-      <App />
-    </Router>
-  </React.StrictMode>,
-  document.getElementById('app')
+    <RouterProvider router={router} />
+  </React.StrictMode>
 );

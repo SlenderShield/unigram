@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
 import logo from '../assets/uniGram logo 2.jpg'
@@ -20,7 +19,7 @@ const Footer = () => {
           <ul className="flex gap-2 p-2 justify-center">
             <li className="flex mx-auto p-2 rounded-full bg-white">
               <a
-                href="https://www.instagram.com/emzardesigns/"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-black p-1"
@@ -30,7 +29,7 @@ const Footer = () => {
             </li>
             <li className="flex justify-center mx-auto p-2 rounded-full bg-white ">
               <a
-                href="https://www.facebook.com/Emzardesigns"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-black p-1"
@@ -40,7 +39,7 @@ const Footer = () => {
             </li>
             <li className="flex justify-center mx-auto p-2 rounded-full bg-white ">
               <a
-                href="https://www.facebook.com/Emzardesigns"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-black p-1"
@@ -59,7 +58,7 @@ const Footer = () => {
           <ul>
             <li>
               <a
-                href="https://www.instagram.com/emzardesigns/"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white"
@@ -69,7 +68,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://www.facebook.com/Emzardesigns"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white"
@@ -79,7 +78,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://www.instagram.com/emzardesigns/"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white"
@@ -89,7 +88,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://www.facebook.com/Emzardesigns"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white"
