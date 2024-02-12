@@ -28,12 +28,11 @@ const data = [
 
 const Service = () => {
   return (
-    <section className="container mx-auto mt-8 bg-[#ECB602] h-[80vh] w-full text-center flex flex-col justify-evenly items-center">
-      <h2 className="text-3xl font-bold ">Services</h2>
-      {/* Add more content as needed */}
-      <div className="flex justify-evenly items-center gap-5 ">
+    <section className="bg-gray-100 p-8">
+      <h2 className="text-2xl font-bold text-center mb-12">Section Header</h2>
+      <div className="flex flex-wrap justify-center">
         {data.map(({ id, title, desc, image }) => (
-          <ServiceCard key={id} id={id} title={title} desc={desc} image={image} />
+          <ServiceCard key={id} title={title} desc={desc} image={image} />
         ))}
       </div>
     </section>
