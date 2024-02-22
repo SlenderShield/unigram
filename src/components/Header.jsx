@@ -7,7 +7,7 @@ function Header() {
   return (
     <header className='shadow-md text-gray-700 bg-[]
     '>
-      <div className="flex justify-between items-center max-w-[1200px] m-auto px-3 py-2 ">
+      <div className="flex justify-between items-center max-w-[1200px] m-auto px-3 py-2">
         <Link href="/" className="text-2xl font-bold flex gap-2 justify-center items-center">
           {/* Logo */}
           <img
