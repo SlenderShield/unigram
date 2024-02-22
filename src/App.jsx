@@ -4,9 +4,9 @@ import UsefulLinks from './components/UsefulLinks'
 const App = () => {
   return (
     <div>
-      <Head />
+      {/* <Head />
       <Service />
-      <UsefulLinks />
+      <UsefulLinks /> */}
     </div>
   );
 };

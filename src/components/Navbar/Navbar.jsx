@@ -1,18 +1,14 @@
-import { menuItemsData } from "../../menuItemsData";
-import MenuItems from "./MenuItems";
+import { menuItemsData } from '../../menuItemsData.js';
+import SubMenu from './SubMenu.jsx';
 
-const Navbar = () => {
-
-    const depthLevel = 0;
-    return (
-        <nav className="desktop-nav hidden lg:block">
-            <ul className="flex items-center flex-wrap list-none">
-                {menuItemsData.map((menu, index) => {
-                    return <MenuItems items={menu} key={index} depthLevel={depthLevel} />
-                })}
-            </ul>
-        </nav>
-    )
+const NavbarComp = () => {
+  return (
+    <ul className='mt-2 mb-4 flex flex-col gap-1 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center'>
+      {menuItemsData.map((item, index) => (
+        <SubMenu {...item} key={index} placement="bottom" />
+      ))}
+    </ul>
+  );
 };
 
-export default Navbar;
+export default NavbarComp
