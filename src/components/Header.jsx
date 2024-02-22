@@ -31,7 +31,7 @@ const Header = () => {
           <Typography>Unigram</Typography>
         </Link>
         <div className='hidden lg:block'>
-          <NavbarComp />
+          <NavbarComp mobileView={openNav} />
         </div>
         <IconButton
           variant='text'
