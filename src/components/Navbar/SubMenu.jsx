@@ -13,7 +13,7 @@ import {
 
 const SubMenu = forwardRef(({ title, url, submenu, placement, mobileView }, ref) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+    const [isMobile, setIsMobile] = useState(false);
 
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
     const toggleView = () => setIsMobile(mobileView);
