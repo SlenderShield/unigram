@@ -1,4 +1,3 @@
-
 import MenuItems from './MenuItems'
 
 function Dropdown({ submenus, dropdown, depthLevel }) {

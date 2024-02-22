@@ -19,7 +19,7 @@ function UsefulLinks() {
     slidesToShow: 4,
     slidesToScroll: 2,
     initialSlide: 2,
-    arrows:true,
+    arrows: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -37,7 +37,7 @@ function UsefulLinks() {
           slidesToScroll: 2,
           initialSlide: 2,
           dots: false,
-          arrows:true
+          arrows: true
         }
       },
       {
@@ -46,7 +46,7 @@ function UsefulLinks() {
           slidesToShow: 1,
           slidesToScroll: 1,
           dots: false,
-          arrows:true,
+          arrows: true,
         }
       }
     ]
