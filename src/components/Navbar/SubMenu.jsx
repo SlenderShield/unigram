@@ -11,12 +11,13 @@ import {
     ChevronDownIcon,
 } from "@heroicons/react/24/solid";
 
-const SubMenu = forwardRef(({ title, url, submenu, placement, mobileView }, ref) => {
+const SubMenu = forwardRef(({ title, url, submenu, placement }, ref) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isMobile, setIsMobile] = useState(false);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
-    const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-    const toggleView = () => setIsMobile(mobileView);
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
 
     return (
         <Menu ref={ref} open={isMenuOpen} handler={setIsMenuOpen} placement={`${isMobile ? "bottom-start" : placement}`} allowHover>

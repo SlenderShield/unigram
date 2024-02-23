@@ -5,7 +5,7 @@ const NavbarComp = ({ mobileView }) => {
   return (
     <ul className='mt-2 mb-4 flex flex-col gap-1 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center'>
       {menuItemsData.map((item, index) => (
-        <SubMenu {...item} key={index} placement="bottom" mobileView />
+        <SubMenu {...item} key={index} placement="bottom" />
       ))}
     </ul>
   );

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../assets/fwdserviceicon/Logo.png';
 import {
   Navbar,
   Typography,
@@ -23,15 +24,13 @@ const Header = () => {
   }, []);
 
   return (
-    <Navbar className='mx-auto px-6 py-3 fixed' fullWidth blurred>
-      <div className='flex items-center justify-between text-blue-gray-900'>
-        <Link to='/' className='flex text-inherit decoration-inherit gap-1 justify-center items-center'>
-          <></>
-          <img src='https://docs.material-tailwind.com/img/logo-ct-dark.png' alt='logo-ct' className='w-10' />
-          <Typography>Unigram</Typography>
+    <Navbar className='mx-auto px-6 py-1 fixed z-50 bg-blue-gray-600 border-none' fullWidth blurred>
+      <div className='flex items-center justify-between '>
+        <Link to='/' className='relative top-1 w-24 lg:w-32'>
+          <img src={logo} alt='logo-ct' className='' />
         </Link>
         <div className='hidden lg:block'>
-          <NavbarComp mobileView={openNav} />
+          <NavbarComp />
         </div>
         <IconButton
           variant='text'
