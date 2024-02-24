@@ -29,8 +29,8 @@ const data = [
 const Service = () => {
   return (
     <section className="bg-gray-100 p-8">
-      <h2 className="text-2xl font-bold text-center mb-12">Section Header</h2>
-      <div className="flex flex-wrap justify-center">
+      <h2 className="text-2xl font-bold text-center mb-12">Services</h2>
+      <div className="flex flex-wrap justify-center gap-4 ">
         {data.map(({ id, title, desc, image }) => (
           <ServiceCard key={id} title={title} desc={desc} image={image} />
         ))}

@@ -5,7 +5,7 @@ const App = () => {
   return (
     <>
       <Head />
-      {/* <Service /> */}
+      <Service />
       {/* <UsefulLinks /> */}
     </>
   );
