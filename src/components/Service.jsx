@@ -2,25 +2,29 @@
 import ServiceCard from './ServiceCard';
 
 import logo from '../assets/IMG_3471.jpg'
+import CircularAdda from '../assets/fwdserviceicon/Circular-Adda.jpg'
+import RTI from '../assets/fwdserviceicon/RTI.jpg'
+import Engineering from '../assets/fwdserviceicon/Civil-Engg-servises.jpg'
+import GPAssist from '../assets/fwdserviceicon/GP-Assistance.jpg'
 const data = [
   {
     id: 1,
-    image: logo,
+    image: CircularAdda,
     title: "Circular's Adda",
     desc: "Classified Collection Of Govt. Circulars, Guidelines, User Manuals …",
   }, {
     id: 2,
-    image: logo,
+    image: RTI,
     title: "R.T.I	",
     desc: "One Stop Solution For All Your Rti Related Queries",
   }, {
     id: 3,
-    image: logo,
+    image: Engineering,
     title: "Engineering ",
     desc: "A Civil Engineering solutions",
   }, {
     id: 4,
-    image: logo,
+    image: GPAssist,
     title: "GP ASSISTANT",
     desc: "Assistant to day to day GP Queries",
   }
