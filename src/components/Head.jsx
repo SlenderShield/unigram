@@ -5,8 +5,9 @@ function Head() {
   return (
     <Carousel
       autoplay
-      autoplayDelay={3000}
+      autoplayDelay={5000}
       transition={{ duration: 2 }}
+      ease="easeInOut"
       prevArrow={({ handlePrev }) => (
         <IconButton
           variant="text"
