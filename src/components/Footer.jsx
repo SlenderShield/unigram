@@ -1,139 +1,56 @@
-import { Link } from "react-router-dom";
-import { FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
-import logo from '../assets/uniGram logo 2.jpg'
 
+'use client';
+import { Footer } from 'flowbite-react';
 
-const Footer = () => {
+import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTwitter, BsYoutube } from 'react-icons/bs';
+import logo from '../assets/fwdserviceicon/Logo.png';
+import { Link } from 'react-router-dom';
+
+function FooterComp() {
   return (
-    <footer className="pb-10  p-5 text-center md:text-left bg-slate-800 text-white">
-      <div className="container mx-auto flex flex-wrap sm:justify-evenly flex-col sm:flex-row">
-      <div className="flex flex-col">
-          <h3 className="text-lg font-bold mb-2 sm:mb-4  mt-4 sm:mt-0 flex justify-center items-center">
-            <img src={logo} alt="Logo" className="w-14 rounded-md"/>
-            <span className="p-1">
-             uni<span className="text-[#ECB602]">G</span>ram
-            </span>
-            
-          </h3>
-          <p className="text-center">hear to help you</p>
-          <ul className="flex gap-2 p-2 justify-center">
-            <li className="flex mx-auto p-2 rounded-full bg-white">
-              <a
-                href="/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-black p-1"
-              >
-                <FaInstagram />
-              </a>
-            </li>
-            <li className="flex justify-center mx-auto p-2 rounded-full bg-white ">
-              <a
-                href="/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-black p-1"
-              >
-                <FaFacebook />
-              </a>
-            </li>
-            <li className="flex justify-center mx-auto p-2 rounded-full bg-white ">
-              <a
-                href="/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-black p-1"
-              >
-                <FaTwitter />
-              </a>
-            </li>
-          </ul>
+    <Footer container className='rounded-none mx-auto bg-black'>
+      <div className="w-full">
+        <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
+          <div className='self-center'>
+            <Link to="/" >
+              <img src={logo} alt="Logo" />
+            </Link>
+          </div>
+          <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
+            <div>
+              <Footer.Title title="Useful Links" />
+              <Footer.LinkGroup col>
+                <Footer.Link href="#">Circular Adda</Footer.Link>
+                <Footer.Link href="#">RTI</Footer.Link>
+                <Footer.Link href="#">UGPedia</Footer.Link>
+                <Footer.Link href="#">GP Assistance</Footer.Link>
+              </Footer.LinkGroup>
+            </div>
+            <div>
+              <Footer.Title title="Unigram" />
+              <Footer.LinkGroup col>
+                <Footer.Link href="#">About</Footer.Link>
+                <Footer.Link href="#">Service</Footer.Link>
+                <Footer.Link href="#">Gallery </Footer.Link>
+                <Footer.Link href="#">Blog </Footer.Link>
+                <Footer.Link href="#">Contact </Footer.Link>
+              </Footer.LinkGroup>
+            </div>
+          </div>
         </div>
-        <div className="flex flex-col pb-5">
-          <h3 className="text-lg font-bold mb-2 sm:mb-4  mt-4 sm:mt-0">
-            <span className="text-[#ECB602] pb-1">
-             Useful Links
-            </span>
-          </h3>
-          <ul>
-            <li>
-              <a
-                href="/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white"
-              >
-                Circular Adda
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white"
-              >
-                RTI
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white"
-              >
-                UGpedia
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white"
-              >
-                GP Assistance
-              </a>
-            </li>
-          </ul>
+        <Footer.Divider />
+        <div className="w-full sm:flex sm:items-center sm:justify-between">
+          <Footer.Copyright href="/" by="Unigram" year={2024} />
+          <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
+            <Footer.Icon href="#" icon={BsFacebook} />
+            <Footer.Icon href="#" icon={BsInstagram} />
+            <Footer.Icon href="#" icon={BsTwitter} />
+            <Footer.Icon href="#" icon={BsYoutube} />
+          </div>
         </div>
-        <div className="flex flex-col ">
-          <h3 className="text-lg font-bold mb-2 sm:mb-4 ">
-            <span className="text-[#ECB602] pb-1">Unigram</span>
-          </h3>
-          <ul>
-            <li>
-              <Link to="/" className="text-white">
-               About
-              </Link>
-            </li>
-            <li>
-              <Link to="/projects" className="text-white">
-                Service
-              </Link>
-            </li>
-            <li>
-              <Link to="/gallery" className="text-white">
-                Gallery
-              </Link>
-            </li>
-            <li>
-              <Link to="/about-us" className="text-white">
-                Blog
-              </Link>
-            </li>
-            <li>
-              <Link to="/contact-us" className="text-white">
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </div>
-        
       </div>
-    </footer>
+    </Footer>
   );
-};
+}
 
-export default Footer;
+export default FooterComp;
