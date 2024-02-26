@@ -3,7 +3,7 @@ import gandhi from '../assets/fwdserviceicon/gandhi_logo.png';
 
 function AboutCom() {
     return (
-        <section className='p-8 bg-about_background bg-no-repeat bg-cover bg-center'>
+        <section className='p-8 about_background bg-no-repeat bg-cover bg-center'>
             <h2 className='text-2xl font-bold text-center mb-12 text-white'>About us</h2>
             <div className='md:w-3/4 max-h-vh flex flex-col md:flex-row md:justify-center gap-4 items-center md:mx-auto'>
                 <div className='w-full md:w-1/3 h-full'>
