@@ -1,7 +1,6 @@
 // src/components/Services.jsx
 import ServiceCard from './ServiceCard';
 
-import logo from '../assets/IMG_3471.jpg'
 import CircularAdda from '../assets/fwdserviceicon/Circular-Adda.jpg'
 import RTI from '../assets/fwdserviceicon/RTI.jpg'
 import Engineering from '../assets/fwdserviceicon/Civil-Engg-servises.jpg'

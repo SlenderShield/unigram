@@ -5,7 +5,7 @@ module.exports = withMT({
   theme: {
     extend: {
       backgroundImage: {
-        'about_background': "url('src/assets/fwdserviceicon/background.png')",
+        'about_background': "url('./src/assets/fwdserviceicon/background.png')",
       },
     },
   },
