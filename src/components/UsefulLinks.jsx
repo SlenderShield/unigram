@@ -14,7 +14,7 @@ export default function UsefulLinks() {
     {
       breakpoint: '1199px',
       numVisible: 3,
-      numScroll: 1,
+      numScroll: 2,
     },
     {
       breakpoint: '767px',
@@ -49,7 +49,7 @@ export default function UsefulLinks() {
           autoplayInterval={3000}
           value={UsefulLinkImages}
           numVisible={4}
-          numScroll={2}
+          numScroll={3}
           responsiveOptions={responsiveOptions}
           itemTemplate={linkTemplate}
         />
