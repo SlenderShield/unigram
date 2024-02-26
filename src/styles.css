@@ -12,6 +12,20 @@ body {
   font-family: sans-serif;
 }
 
+.p-carousel-indicators {
+  gap: 3px;
+}
+.p-carousel-indicators .p-link {
+  background: revert-layer;
+  border: none;
+  border-radius: 20px;
+}
+/* .card {
+    background: var(--surface-card);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+} */
 /* Customize the overall scrollbar */
 ::-webkit-scrollbar {
   width: 8px;

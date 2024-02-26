@@ -2,18 +2,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles.css';
-import { ThemeProvider } from "@material-tailwind/react";
+import { ThemeProvider } from '@material-tailwind/react';
 
-
-import App from "./App";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Root from "./routes/Root"
-import ErrorPage from "./routes/Error-Page";
-import About from "./routes/About";
-import Services from "./routes/Services";
-import Contact from "./routes/Contact";
-import Login from "./routes/Login";
-import SignUp from "./routes/SignUp";
+import App from './App';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Root from './routes/Root';
+import ErrorPage from './routes/Error-Page';
+import About from './routes/About';
+import Services from './routes/Services';
+import Contact from './routes/Contact';
+import Login from './routes/Login';
+import SignUp from './routes/SignUp';
 
 const router = createBrowserRouter([
   {
@@ -21,27 +20,27 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/",
+        path: '/',
         element: <App />,
       },
       {
-        path: "services",
+        path: 'services',
         element: <Services />,
       },
       {
-        path: "about",
+        path: 'about',
         element: <About />,
       },
       {
-        path: "contact",
+        path: 'contact',
         element: <Contact />,
       },
       {
-        path: "login",
+        path: 'login',
         element: <Login />,
       },
       {
-        path: "signup",
+        path: 'signup',
         element: <SignUp />,
       },
     ],
@@ -55,5 +54,5 @@ root.render(
     <ThemeProvider>
       <RouterProvider router={router} />
     </ThemeProvider>
-  </React.StrictMode>
+  </React.StrictMode>,
 );
