@@ -24,7 +24,7 @@ const Header = () => {
   }, []);
 
   return (
-    <Navbar className='mx-auto px-6 py-1 fixed z-50 bg-blue-gray-600 border-none' fullWidth blurred>
+    <Navbar className='mx-auto px-6 py-1 fixed bg-[#55185D] text-white z-50 border-none' fullWidth blurred>
       <div className='flex items-center justify-between '>
         <Link to='/' className='relative top-1 w-24 lg:w-32'>
           <img src={logo} alt='logo-ct' className='' />
